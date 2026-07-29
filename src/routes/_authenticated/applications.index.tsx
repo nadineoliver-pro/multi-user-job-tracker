@@ -10,6 +10,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ImportApplicationsDialog } from "@/components/ImportApplicationsDialog";
+
 import {
   Select,
   SelectContent,
@@ -110,7 +112,11 @@ function ApplicationsPage() {
 
   return (
     <div className="space-y-8">
-      <h1 className="text-2xl font-bold text-foreground">Applications</h1>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <h1 className="text-2xl font-bold text-foreground">Applications</h1>
+        <ImportApplicationsDialog />
+      </div>
+
 
       <Card>
         <CardHeader>
