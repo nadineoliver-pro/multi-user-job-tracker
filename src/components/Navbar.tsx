@@ -35,6 +35,13 @@ export function Navbar() {
             Applications
           </Link>
           <Link
+            to="/stats"
+            className="text-muted-foreground hover:text-foreground"
+            activeProps={{ className: "text-foreground font-medium" }}
+          >
+            Stats
+          </Link>
+          <Link
             to="/tasks"
             className="text-muted-foreground hover:text-foreground"
             activeProps={{ className: "text-foreground font-medium" }}
